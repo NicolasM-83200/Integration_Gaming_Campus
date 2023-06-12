@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
+/* =================== Paramètres généraux ================= */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+}
+button {
+  background: none;
+  outline: none;
+  border: 1px solid whitesmoke;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.7s ease;
+  cursor: pointer;
+}
+button:hover {
+  color: black;
+  background: whitesmoke;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0 auto;
+  text-align: center;
+}
+/* ========================== Navbar ========================== */
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav:hover li:not(:hover) {
+  color: rgb(20, 20, 20);
+}
+nav:hover li:not(:hover)::before {
+  background: none;
+}
+nav li {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s ease;
+  padding: 20px 0;
+}
+nav li:first-child {
+  color: blueviolet;
+}
+nav li:first-child:before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  background: blueviolet;
+  transform: translateY(-20px);
+}
+nav li:hover:before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  background: blueviolet;
+  transform: translateY(-20px);
+}
+nav li:hover {
+  color: blueviolet;
+}
+nav li:last-child:before {
+  background: none;
+}
+#language {
+  background: rgb(125 125 125 / 27%);
+  padding: 7px 15px;
+  border-radius: 50px;
+}
+/* ========================== HEADER ============================ */
+.main-header {
+  background: url(./assets/img/bg.jpg) fixed center/cover;
+  color: whitesmoke;
+  padding: 120px;
+}
+.main-header h1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 30px 0 35px;
+}
+.main-header button {
+  padding: 15px 30px;
+  letter-spacing: 2px;
+}
+.main-header i {
+  transform: translateX(5px);
+}
+.header-text {
+  margin: 45px auto;
+  max-width: 1100px;
+  font-size: 1.2rem;
+  line-height: 34px;
+}
+/* ========================= ICON PART ============================= */
+.icon-part {
+  background-color: rgb(20, 20, 20);
+  padding: 75px 0;
+  color: whitesmoke;
+}
+.icon-part-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.lip-logo {
+  margin-bottom: 30px;
+}
+.icon-part h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.icon-part p {
+  width: 80%;
+  margin: 10px auto 40px;
+}
+.icon-part button {
+  padding: 9px 32px;
+}
+/* ============================ NEWS PART ============================== */
+.news-part {
+  background: rgba(245, 245, 245, 0.8);
+  padding: 80px 0 45px;
+}
+.header-news {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.left-part {
+  line-height: 30px;
+}
+.left-part h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-align: left;
+}
+.left-part p {
+  font-weight: 600;
+  text-align: left;
+  font-size: 0.9rem;
+}
+.right-part button {
+  color: rgb(20, 20, 20);
+  border: 1px solid rgb(20, 20, 20);
+  padding: 10px 20px;
+  letter-spacing: 1px;
+}
+.right-part button i {
+  transform: translateX(5px);
+}
+.right-part button:hover {
+  color: whitesmoke;
+  background: rgb(20, 20, 20);
+}
+.main-news-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 45px auto;
+}
+.new {
+  position: relative;
+  max-width: 23%;
+}
+.new img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 2px 10px #888;
+}
+.main-news-container h4 {
+  margin: 15px 0;
+  text-align: left;
+}
+.main-news-container p {
+  text-align: left;
+  font-weight: bold;
+  font-size: 0.8rem;
+  line-height: 20px;
+  margin-bottom: 45px;
+}
+.link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+/* ========================= CONTACT ============================ */
+.contact {
+  padding: 60px 0 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.contact-list {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.list {
+  text-align: left;
+  width: 23%;
+}
+#contact-img img {
+  margin: 0 auto;
+  display: block;
+}
+.contact-list h5 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.contact-list p {
+  line-height: 25px;
+  font-size: 0.9rem;
+}
+.info-p ul > li {
+  margin-bottom: 15px;
+}
+.list:nth-child(3) p {
+  margin: 20px 20px 20px 0;
+}
+.list h6 {
+  font-size: 0.8rem;
+}
+.network h5 {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+.copyright {
+  margin-top: 25px;
+}
+.contact-medias {
+  padding: 75px 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.contact-medias:before {
+  content: "";
+  width: 90%;
+  height: 1px;
+  position: absolute;
+  background-color: rgba(173, 173, 173, 0.8);
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.media-text {
+  text-align: left;
+}
+.media-text h3 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.media-logos span {
+  margin-left: 25px;
+}
+/* =========================== FOOTER ============================== */
+footer {
+  background-color: rgb(20, 20, 20);
+  color: whitesmoke;
+}
+footer h3 {
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
